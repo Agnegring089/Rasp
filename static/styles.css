@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+.cafe-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.cafe-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cafe-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cafe-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cafe-card a {
+    text-decoration: none;
+    color: #fff;
+    background: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.qr-code img {
+    width: 200px;
+    margin: 20px auto;
+}

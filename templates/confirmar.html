@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Confirmar Pedido</title>
+</head>
+<body>
+    <h1>Confirme seu pedido</h1>
+    <div class="cafe-info">
+        <h2>{{ cafe.nome }}</h2>
+        <p>Preço: R$ {{ cafe.preco }}</p>
+    </div>
+    <div class="qr-code">
+        <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code Pix">
+    </div>
+    <form method="POST">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <button type="submit">Confirmar Pedido</button>
+    </form>
+</body>
+</html>

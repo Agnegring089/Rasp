@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Cafés</title>
+</head>
+<body>
+    <h1>Escolha seu café</h1>
+    <div class="cafe-list">
+        {% for cafe in cafes %}
+        <div class="cafe-card">
+            <img src="{{ cafe.imagem }}" alt="{{ cafe.nome }}">
+            <h2>{{ cafe.nome }}</h2>
+            <p>R$ {{ cafe.preco }}</p>
+            <a href="/confirmar/{{ cafe.id }}">Selecionar</a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
